@@ -47,7 +47,10 @@ const Instructions = ({ data = [] }) => (
   <section className="instructions">
     <h2>Cooking Instructions</h2>
     {data.map((step, i) => (
+      <div key={i}>this is {i}
       <p key={i}>{step}</p>
+      </div>
+      
     ))}
   </section>
 );

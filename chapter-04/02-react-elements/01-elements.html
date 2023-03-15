@@ -16,9 +16,10 @@
 <script>
 
     const dish = React.createElement("h1", null, "Baked Salmon")
+    const message = React.createElement("a", {href:'http://www.google.com'}, "google")
 
     ReactDOM.render(
-        dish,
+        [dish, message],
         document.getElementById('react-container')
     )
 
